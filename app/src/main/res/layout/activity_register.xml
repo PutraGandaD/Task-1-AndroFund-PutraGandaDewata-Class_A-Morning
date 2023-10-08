@@ -27,7 +27,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/my_toolbar"
-        app:layout_constraintVertical_bias="0.300" />
+        app:layout_constraintVertical_bias="0.260" />
 
     <EditText
         android:id="@+id/et_email_register"
@@ -65,6 +65,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/et_alamat_register"/>
 
+    <EditText
+        android:id="@+id/et_confpassword_register"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_edittext_background"
+        android:inputType="textPassword"
+        android:hint="Konfirmasi Kata Sandi"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_password_register"/>
+
+
     <Button
         android:id="@+id/btn_login_data"
         android:layout_width="200dp"
@@ -73,7 +86,7 @@
         android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/et_password_register" />
+        app:layout_constraintTop_toBottomOf="@id/et_confpassword_register" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
