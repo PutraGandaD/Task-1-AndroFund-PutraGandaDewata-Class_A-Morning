@@ -51,5 +51,27 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/et_password" />
 
+    <TextView
+        android:id="@+id/tv_hint_riwayat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status Login Anda Sebelumnya ="
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_login_data" />
+
+    <TextView
+        android:id="@+id/tv_riwayat_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" "
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_hint_riwayat" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
