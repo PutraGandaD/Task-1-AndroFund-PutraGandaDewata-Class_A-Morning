@@ -7,5 +7,9 @@ class RegisterActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_register)
+
+        setSupportActionBar(findViewById(R.id.my_toolbar))
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        title = "Daftar"
     }
 }
