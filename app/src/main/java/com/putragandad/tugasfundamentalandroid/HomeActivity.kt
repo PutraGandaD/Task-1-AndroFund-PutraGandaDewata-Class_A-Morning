@@ -23,6 +23,9 @@ class HomeActivity : AppCompatActivity(), View.OnClickListener {
 
         val btnLogout: Button = findViewById(R.id.btn_logout)
         btnLogout.setOnClickListener(this)
+
+        val btnTentangAppFragment : Button = findViewById(R.id.fragment_about_app)
+        btnTentangAppFragment.setOnClickListener(this)
     }
 
     override fun onClick(v: View) {
@@ -32,6 +35,10 @@ class HomeActivity : AppCompatActivity(), View.OnClickListener {
                 intent.putExtra("riwayatLogin", "Anda Sudah Login")
                 setResult(RESULT_OK, intent)
                 finish()
+            }
+            R.id.fragment_about_app -> {
+                val intent = Intent(this@HomeActivity, FragmentContainer::class.java)
+                startActivity(intent)
             }
         }
     }
